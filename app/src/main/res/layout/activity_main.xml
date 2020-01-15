@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/team1"
+            style="@style/TeamText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/team_1"
+            android:textSize="50sp" />
+
+        <ImageButton
+            android:id="@+id/plus1"
+            style="@style/PlusButtons"
+            android:layout_below="@+id/team1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/ScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/team1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40sp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/plus1"
+            android:layout_toLeftOf="@+id/plus1"
+            android:layout_toEndOf="@+id/minus1"
+            android:layout_toRightOf="@+id/minus1"
+            android:gravity="center"
+            android:text="@string/num0"
+            android:textSize="50sp" />
+
+        <ImageButton
+            android:id="@+id/minus1"
+            style="@style/MinusButtons"
+            android:layout_below="@+id/team1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/team2"
+            style="@style/TeamText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/team_2"
+            android:textSize="50sp" />
+
+        <ImageButton
+            android:id="@+id/plus2"
+            style="@style/PlusButtons"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_below="@+id/team2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/ScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/team2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40sp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/plus2"
+            android:layout_toLeftOf="@+id/plus2"
+            android:layout_toEndOf="@+id/minus2"
+            android:layout_toRightOf="@+id/minus2"
+            android:gravity="center"
+            android:text="@string/num1"
+            android:textSize="50sp" />
+
+        <ImageButton
+            android:id="@+id/minus2"
+            style="@style/MinusButtons"
+            android:layout_below="@+id/team2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40sp" />
+    </RelativeLayout>
+</LinearLayout>
